@@ -8,6 +8,7 @@ const x = {
 const x1 = x => Object.assign({}, x, {val: val + 1});
 const x2 = x => Object.assign({}, x, {val: val * 2});
 
+// function compostion f(g(x))
 console.log(x1(x2(x)).val); // 5
 
 const y = {
